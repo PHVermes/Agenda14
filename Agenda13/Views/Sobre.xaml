@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Agenda13.Views.Sobre"
+             NavigationPage.HasNavigationBar="False"
+             Background="White">
+    <VerticalStackLayout VerticalOptions="Center" Spacing="10" Padding="10">
+        <Label Text="Sobre"
+               FontFamily="Lobster"
+               FontSize="50"
+               TextColor="Blue"
+               HorizontalOptions="Center"/>
+        <Frame Background="Blue">
+            <VerticalStackLayout>
+                <Label HorizontalOptions="Center"
+                       Text="Desenvolvido por: Pedro Henrique Vermes
+                       Data de desenvolvimento: 03/11/2024
+                       Desenvolvido em: .NET MAUI, C#, XAML"
+                       TextColor="White"/>
+            </VerticalStackLayout>
+        </Frame>
+        <Button MaximumWidthRequest="70" Text="Voltar" BackgroundColor="Blue" TextColor="White" Clicked="Button_Clicked"/>
+    </VerticalStackLayout>
+</ContentPage>
